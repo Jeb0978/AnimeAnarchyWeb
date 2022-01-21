@@ -14,6 +14,4 @@
 Stream Anime Like Never Before!
 
 Join our discord server - 
-<iframe src="https://discord.com/widget?id=891276008328671253&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
-
-
+https://discord.gg/twapFZv4eN
