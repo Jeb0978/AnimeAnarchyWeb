@@ -1,19 +1,9 @@
-import React, { FC, useLayoutEffect, useRef } from 'react';
-import { AspectRatio } from '@components/Layout/AspectRatio';
-import { PlayerBox } from './styled';
-import Plyr from 'plyr-react';
-import 'plyr-react/dist/plyr.css';
+import React, { useLayoutEffect, useRef } from 'react';
+import Plyr from 'plyr';
 import Hls from 'hls.js';
+import 'plyr/dist/plyr.css';
 
-export const Player: FC<PlayerProps> = ({ src: srcProp }) => {
-  const [src, setSrc] = React.useState(srcProp);
-
-  React.useEffect(() => {
-    setSrc(srcProp);
-  }, [srcProp]);
-
-  return (
-    const PlyrComponent = () => {
+const PlyrComponent = () => {
     const video = useRef();
     const playerInstance = useRef();
 
@@ -33,9 +23,3 @@ export const Player: FC<PlayerProps> = ({ src: srcProp }) => {
 };
 
 export default PlyrComponent;
-  );
-};
-
-type PlayerProps = {
-  src: string;
-};
