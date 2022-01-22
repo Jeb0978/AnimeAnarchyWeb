@@ -1,8 +1,10 @@
 import React, { FC } from 'react';
+import React, { useLayoutEffect, useRef } from 'react';
 import { AspectRatio } from '@components/Layout/AspectRatio';
 import { PlayerBox } from './styled';
-import Plyr from 'plyr-react'
-import 'plyr-react/dist/plyr.css'
+import Plyr from 'plyr-react';
+import 'plyr-react/dist/plyr.css';
+import Hls from 'hls.js';
 
 export const Player: FC<PlayerProps> = ({ src: srcProp }) => {
   const [src, setSrc] = React.useState(srcProp);
