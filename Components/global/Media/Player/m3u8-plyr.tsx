@@ -1,5 +1,4 @@
-import React, { FC } from 'react';
-import React, { useLayoutEffect, useRef } from 'react';
+import React, { FC, useLayoutEffect, useRef } from 'react';
 import { AspectRatio } from '@components/Layout/AspectRatio';
 import { PlayerBox } from './styled';
 import Plyr from 'plyr-react';
