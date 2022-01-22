@@ -13,8 +13,6 @@ export const Player: FC<PlayerProps> = ({ src: srcProp }) => {
   }, [srcProp]);
 
   return (
-    <PlayerBox>
-      <AspectRatio ratio='16:9'>
     const PlyrComponent = () => {
     const video = useRef();
     const playerInstance = useRef();
@@ -35,8 +33,6 @@ export const Player: FC<PlayerProps> = ({ src: srcProp }) => {
 };
 
 export default PlyrComponent;
-      </AspectRatio>
-    </PlayerBox>
   );
 };
 
