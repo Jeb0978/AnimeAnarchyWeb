@@ -1,0 +1,134 @@
+.main {
+  min-height: 100vh;
+  padding: 4rem 0;
+  display: grid;
+  place-items: center;
+}
+
+.iframe_wrapper {
+  position: relative;
+  width: 50%;
+  height: 61%;
+}
+.iframe_container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+  background: black;
+  border-radius: 14px;
+}
+.dropdown {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 102;
+  padding-right: 5px;
+}
+.dropdown::before {
+  content: "";
+  width: 1px;
+  position: absolute;
+  top: 5px;
+  bottom: 5px;
+  right: 0;
+  background: rgba(255, 255, 255, 0.3);
+}
+.dropdown_button {
+  background: 0 0 !important;
+  border: none;
+  padding: 8px 16px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3) !important;
+  color: #fff !important;
+  border-color: #0098ff !important;
+  text-align: center;
+  display: inline-block;
+  font-weight: 400;
+  cursor: pointer;
+}
+.dropdown_button:hover {
+  color: #fff !important;
+  box-shadow: none !important;
+  background: #111 !important;
+  text-shadow: none !important;
+  border-radius: 30px;
+}
+.dropdown_menu {
+  cursor: pointer;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  transform: translate3d(0px, 40px, 0px);
+  display: none;
+  border: none;
+  min-width: 200px;
+  padding: 0;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 5px;
+  transform: none !important;
+  top: 40px !important;
+  bottom: auto !important;
+  background: 0 0 !important;
+  max-height: 160px;
+  overflow: auto;
+  z-index: 103;
+  margin: 0.125rem 0 0;
+  font-size: 1rem;
+  color: #212529;
+  text-align: left;
+  list-style: none;
+  overflow-y: scroll;
+}
+.dropdown_menu::-webkit-scrollbar {
+  width: 2px;
+  background-color: #1a1a1a00;
+}
+.dropdown_menu::-webkit-scrollbar-thumb {
+  background: #978863;
+  border-radius: 0;
+}
+.dropdown_item {
+  padding: 10px 20px;
+  font-size: 14px;
+  border-bottom: 1px solid #1a1a1a;
+  background: #111;
+  color: #fff;
+}
+.dropdown_item:hover {
+  background: #1a1a1a;
+  color: #fff;
+}
+.media_title {
+  position: absolute;
+  display: inline-block;
+  top: 10px;
+  left: 170px;
+  right: 0;
+  z-index: 102;
+  line-height: 1em;
+  font-size: 16px;
+  padding: 9px 0;
+}
+.show_name {
+  display: block;
+  max-width: 80%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: 500;
+  line-height: 24px;
+  color: #fff;
+  white-space: nowrap;
+  text-shadow: 0 1px 1px rgb(0 0 0 / 30%);
+}
+.iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 13px;
+}
